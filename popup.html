@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <title>ED2k Parser</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="form__group">
+    <textarea id="text-area" class="form__field" placeholder="Click Grab ED2k to parse ed2k links from current page"></textarea>
+    <label id="text-area-label" for="text-area" class="form__label">ED2K Links</label>
+  </div>
+  <button class="form__btn form__btn_primary" id="read-content">Grab ED2k</button>
+  <button class="form__btn form__btn_danger" id="clear-content">Clear</button>
+  <script src="popup.js"></script>
+</body>
+
+<style>
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 4px;
+}
+
+.form__label {
+  margin-bottom: 10px;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  min-width: 300px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: xx-small;
+  color: #212121;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  max-width: 100%;
+  min-height: 100px;
+  min-width: 1024px;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+
+label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+  color: #009788;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #009788;
+}
+
+.form__btn_primary {
+    background-color: #009788;
+}
+.form__btn_danger {
+    background-color: #971700;
+}
+
+.form__btn {
+  padding: 6px 16px 6px 12px;
+  margin: 6px 8px 6px 0px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form__btn_primary:hover {
+  background-color: #00897b;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+</style>
+
+</html>

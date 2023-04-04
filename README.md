@@ -1,3 +1,4 @@
+
 # EDD2k - Link Grabber
 
 An extension for Google Chrome that allows you to get all the ED2K links from a page and copy them into a popup, saving them in storage so you can change pages and keep accumulating links and then copy and paste them into your client ready to start the transfer!
@@ -32,5 +33,10 @@ This work is licensed under a
 
 Donations are always welcome!
 
-![GitHub Sponsors](https://img.shields.io/github/sponsors/exSnake)
+[paypal-donate]: http://paypal.me/exSnake
 
+[Link for donations][paypal-dona].
+[![GitHub Sponsors][paypal-dona-shield]][paypal-dona]
+
+[paypal-dona]: http://paypal.me/exSnake
+[paypal-dona-shield]: https://img.shields.io/github/sponsors/exSnake
